@@ -1,0 +1,188 @@
+.nav-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 52px;
+	.nav-menu {
+		display: flex;
+		& > li {
+			font-size: 1.8rem;
+			font-family: "Poppins", sans-serif;
+		}
+		& > li:not(:first-child) {
+			padding-left: 40px;
+		}
+		.first {
+			color: $font1-color;
+		}
+	}
+	.item-contact {
+		font-size: 1.8rem;
+		font-family: "Poppins", sans-serif;
+		padding-left: 40px;
+	}
+	.icon-menu {
+		display: none;
+	}
+	.btn-outline {
+		padding: 16px 45px;
+		border: 2px solid $font1-color;
+		color: $font1-color;
+		font-weight: bold;
+	}
+	.header-content {
+		display: flex;
+		justify-content: space-between;
+	}
+	.flex {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+// nav-header
+.header-content {
+	display: flex;
+	margin-top: 56px;
+	align-items: center;
+
+	.content-left {
+		max-width: 633px;
+		h3 {
+			font-size: 3.2rem;
+			font-weight: bold;
+			font-family: "Red Hat Display", sans-serif;
+			color: $font1-color;
+		}
+		h1 {
+			font-size: 5rem;
+			font-weight: 700;
+			font-family: "Red Hat Display", sans-serif;
+			color: $font3-color;
+			line-height: 72px;
+		}
+		span {
+			font-size: 2rem;
+			font-family: "Poppins", sans-serif;
+			margin-top: 29px;
+			display: inline-block;
+			text-transform: capitalize;
+			line-height: 45px;
+		}
+		.btn-primary {
+			padding: 24px 60px;
+			border-radius: 65px;
+			margin-top: 54px;
+			background: $font1-color;
+			font-weight: bold;
+			font-size: 24px;
+			line-height: 29px;
+			text-transform: capitalize;
+			color: $gb-color;
+			font-family: "Poppins", sans-serif;
+			box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+
+// responsive
+@media screen and (max-width: 1090px) {
+	.header-content {
+		align-items: flex-start;
+		margin-top: 40px;
+		.content-left {
+			h3 {
+				font-size: 3rem;
+			}
+			h1 {
+				font-size: 4rem;
+				line-height: 50px;
+			}
+			span {
+				font-size: 2rem;
+				line-height: 45px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 1023px) {
+	.nav-header {
+		.nav-menu {
+			display: none;
+		}
+		.icon-menu {
+			display: block;
+			text-align: center;
+			line-height: 50%;
+		}
+		.bx-menu {
+			font-size: 3rem;
+		}
+		.item-contact {
+			padding-left: 20px;
+		}
+	}
+}
+@media screen and (max-width: 889px) {
+	.header-content {
+		align-items: flex-start;
+		margin-top: 40px;
+		.content-left {
+			h3 {
+				font-size: 2.5rem;
+			}
+			h1 {
+				font-size: 3rem;
+			}
+			span {
+				margin-top: 15px;
+				font-size: 1.5rem;
+				line-height: 30px;
+			}
+			.btn-primary {
+				margin-top: 20px;
+				padding: 10px 20px;
+				font-size: 1.8rem;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.header-content {
+		flex-wrap: wrap-reverse;
+		gap: 25px;
+		.content-left {
+			h3 {
+				text-align: center;
+				font-size: 4rem;
+			}
+			h1 {
+				font-size: 3.5rem;
+				text-align: center;
+			}
+			span {
+				margin-top: 15px;
+				font-size: 1.8rem;
+				line-height: 30px;
+				text-align: center;
+			}
+			.btn-primary {
+				margin-top: 20px;
+				padding: 14px 25px;
+				font-size: 1.8rem;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+			}
+		}
+	}
+	.nav-header {
+		.item-contact {
+			font-size: 1.3rem;
+		}
+		.btn-outline {
+			padding: 10px 20px;
+		}
+	}
+}
