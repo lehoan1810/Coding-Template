@@ -1,0 +1,73 @@
+.banner {
+	display: flex;
+	// gap: 66px;
+	align-items: center;
+	position: relative;
+	// left: -180px;
+	.test {
+		transform: translateX(-200px);
+	}
+	img {
+		max-width: 840px;
+		object-fit: cover;
+	}
+
+	&-content {
+		transform: translateX(-150px);
+	}
+
+	&-title {
+		font-size: 2.9rem;
+		font-weight: bold;
+		font-family: "Red Hat Display", sans-serif;
+		color: $font1-color;
+	}
+	&-title-1 {
+		font-size: 5rem;
+		font-weight: 700;
+		font-family: "Red Hat Display", sans-serif;
+		color: $font3-color;
+	}
+	&-desc {
+		font-size: 1.9rem;
+		line-height: 4.3rem;
+		font-family: "Poppin", sans-serif;
+	}
+	.btn-learn-more {
+		margin-top: 56px;
+		padding: 22px 50px;
+		background: rgba(250, 86, 82, 0.15);
+		border-radius: 65px;
+		color: $font1-color;
+		font-size: 20px;
+		font-weight: 600;
+		font-family: "Poppin", sans-serif;
+	}
+}
+
+// Contagion
+.contagion {
+	text-align: center;
+	&-title {
+		font-size: 2.9rem;
+		color: $font1-color;
+		font-weight: 700;
+		font-family: "Red Hat Display", sans-serif;
+	}
+	&-title1 {
+		font-size: 5rem;
+		color: $font2-color;
+		font-weight: 700;
+		font-family: "Red Hat Display", sans-serif;
+	}
+	.block-desc {
+		max-width: 570px;
+		margin: 0 auto;
+		font-family: "Poppin", sans-serif;
+	}
+	&-desc {
+		font-size: 1.8rem;
+		color: $font3-color;
+		line-height: 38px;
+	}
+}
